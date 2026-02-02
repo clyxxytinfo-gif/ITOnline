@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontakt - ITOnline IT-Security Bielefeld">
+  <title>Kontakt - ITOnline IT-Security</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <a href="index.html" class="logo">🔒 ITOnline</a>
+    <button class="mobile-menu-btn">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="leistungen.html">Leistungen</a></li>
+        <li><a href="referenzen.html">Referenzen</a></li>
+        <li><a href="about.html">Über mich</a></li>
+        <li><a href="features.html">Features & Tipps</a></li>
+        <li><a href="blog.html">Wissen</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding: 3rem 2rem;">
+  <div class="hero-container">
+    <h1>Kontakt</h1>
+    <p>Ich freue mich auf Ihre Nachricht</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+      
+      <!-- CONTACT INFO -->
+      <div>
+        <h2>Kontaktdaten</h2>
+        
+        <div style="margin-bottom: 2rem;">
+          <h4>📞 Telefon</h4>
+          <p style="font-size: 1.1rem;">
+            <a href="tel:+4952123456789" style="color: var(--primary); text-decoration: none; font-weight: 600;">
+              +49 521 23456789
+            </a>
+          </p>
+        </div>
+
+        <div style="margin-bottom: 2rem;">
+          <h4>📧 E-Mail</h4>
+          <p style="font-size: 1.1rem;">
+            <a href="mailto:info@itonline-security.de" style="color: var(--primary); text-decoration: none; font-weight: 600;">
+              info@itonline-security.de
+            </a>
+          </p>
+        </div>
+
+        <div style="margin-bottom: 2rem;">
+          <h4>🚨 Notfall-Hotline</h4>
+          <p style="font-size: 1.1rem;">
+            <a href="tel:+4952187654321" style="color: var(--accent); text-decoration: none; font-weight: 600;">
+              +49 521 87654321
+            </a>
+          </p>
+          <p style="color: var(--text-light); font-size: 0.9rem;">24/7 für Sicherheitsvorfälle</p>
+        </div>
+
+        <div style="margin-bottom: 2rem;">
+          <h4>📍 Adresse</h4>
+          <p>
+            ITOnline<br>
+            Beispielstraße 123<br>
+            33602 Bielefeld<br>
+            Deutschland
+          </p>
+        </div>
+
+        <div style="margin-bottom: 2rem;">
+          <h4>🕐 Öffnungszeiten</h4>
+          <p>
+            Mo–Fr: 09:00–17:00 Uhr<br>
+            Samstag: Nach Vereinbarung<br>
+            Sonntag: Notfall-Hotline
+          </p>
+        </div>
+
+        <div style="background: var(--bg); padding: 2rem; border-radius: 8px;">
+          <h4>💡 Schneller Kontakt</h4>
+          <p>Nutzen Sie das Formular neben an. Ich antworte normalerweise innerhalb von 24 Stunden.</p>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <div>
+        <h2>Nachricht senden</h2>
+        
+        <form id="contactForm">
+          <div class="form-success">
+            ✅ Danke! Ihre Nachricht wurde versendet. Ich melde mich in Kürze.
+          </div>
+
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-Mail *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="company">Firma / Unternehmen</label>
+            <input type="text" id="company" name="company">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Anliegen *</label>
+            <select id="subject" name="subject" required>
+              <option value="">-- Bitte wählen --</option>
+              <option value="Sicherheitsanalyse">Sicherheitsanalyse</option>
+              <option value="Backup & Recovery">Backup & Recovery</option>
+              <option value="Virenschutz & Firewall">Virenschutz & Firewall</option>
+              <option value="DSGVO & Compliance">DSGVO & Compliance</option>
+              <option value="Notfallplanung">Notfallplanung</option>
+              <option value="Managed Services">Managed Services</option>
+              <option value="Sicherheitsvorfal">Sicherheitsvorfal (Notfall)</option>
+              <option value="Sonstiges">Sonstiges</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Nachricht *</label>
+            <textarea id="message" name="message" required placeholder="Erzählen Sie mir von Ihrem Anliegen..."></textarea>
+          </div>
+
+          <p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1.5rem;">
+            * Pflichtfelder
+          </p>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
+            Nachricht senden
+          </button>
+
+          <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 1rem; text-align: center;">
+            Ihre Daten werden vertraulich behandelt. Siehe <a href="datenschutz.html" style="color: var(--primary);">Datenschutz</a>.
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAP PLACEHOLDER -->
+<section class="alt">
+  <div class="container">
+    <h2>Standort Bielefeld</h2>
+    <div style="background: var(--bg); padding: 3rem; border-radius: 8px; text-align: center; color: var(--text-light);">
+      <p style="font-size: 1.2rem; margin-bottom: 1rem;">🗺️ Karte wird hier eingebunden</p>
+      <p>Sie können mich auch remote erreichen. Viele Aufgaben können online durchgeführt werden.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ / EXPECTATIONS -->
+<section>
+  <div class="container">
+    <h2>Häufige Fragen zum Kontakt</h2>
+    
+    <div style="max-width: 800px; margin: 0 auto;">
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Wie schnell antwortet ihr?</span>
+          <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">
+          Normalerweise innerhalb von 24 Stunden. Bei Notfällen (Sicherheitsvorfälle) bin ich über die Notfall-Hotline sofort erreichbar.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Kostet ein Erstgespräch etwas?</span>
+          <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">
+          Nein. Das Erstgespräch ist kostenlos und unverbindlich. Ich schaue mir Ihre Situation an, stelle Fragen und zeige Möglichkeiten auf. Danach entscheiden Sie.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Müssen wir uns persönlich treffen?</span>
+          <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">
+          Nicht zwingend. Viele erste Gespräche können telefonisch oder per Videokonferenz stattfinden. Für tiefere Analysen ist manchmal ein vor-Ort-Termin sinnvoll.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Was muss ich zum Termin mitbringen?</span>
+          <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">
+          Das hängt von der Art der Analyse ab. Für ein Erstgespräch: einfach Ihre aktuelle IT-Situation und Ihre Bedenken. Für eine Sicherheitsanalyse: Admin-Zugang zu den Systemen, die ich überprüfen soll.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Unterliegt unsere Kommunikation der Vertraulichkeit?</span>
+          <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">
+          Absolut. Alles, was Sie mir erzählen, bleibt vertraulich. Ich unterliege der Geheimhaltungspflicht. Siehe auch Datenschutzerklärung und Impressum.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="alt">
+  <div class="container text-center">
+    <h2>Bereit zu starten?</h2>
+    <p style="font-size: 1.1rem; margin-bottom: 2rem;">Senden Sie eine Nachricht, rufen Sie an oder nutzen Sie die Notfall-Hotline – wie Sie sich wohler fühlen.</p>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="tel:+4952123456789" class="btn btn-primary">📞 Jetzt anrufen</a>
+      <a href="mailto:info@itonline-security.de" class="btn btn-secondary">📧 E-Mail schreiben</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>🔒 ITOnline</h4>
+      <p>IT-Security Spezialist für mittelständische Unternehmen in Bielefeld.</p>
+      <p><strong>Notfall-Hotline:</strong><br>+49 521 87654321</p>
+    </div>
+    <div class="footer-section">
+      <h4>Leistungen</h4>
+      <ul style="list-style: none;">
+        <li><a href="leistungen.html#sicherheitsanalyse">Sicherheitsanalyse</a></li>
+        <li><a href="leistungen.html#backup">Backup & Recovery</a></li>
+        <li><a href="leistungen.html#virenschutz">Virenschutz & Firewall</a></li>
+        <li><a href="leistungen.html#compliance">DSGVO & Compliance</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Unternehmen</h4>
+      <ul style="list-style: none;">
+        <li><a href="about.html">Über mich</a></li>
+        <li><a href="referenzen.html">Referenzen</a></li>
+        <li><a href="blog.html">Blog / Wissen</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Rechtliches</h4>
+      <ul style="list-style: none;">
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="agb.html">AGB</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 ITOnline. Alle Rechte vorbehalten. | IT-Security Bielefeld</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
